@@ -1,5 +1,6 @@
 PAGE_CONFIG = {
-    "icon": "🌟",
+    "title": "Streamlit for Teams beta",
+    "icon": "https://assets.website-files.com/5dc3b47ddc6c0c2a1af74ad0/5dea44bf49103c67a79b18d4_favicon32.png",
     "layout": "wide",
     "sidebar":"collapsed"
 }
@@ -16,12 +17,12 @@ Now you can configure your page. Current options include:
 """,
         "code":'''
 st.beta_set_page_config(
-    page_title="Streamlit Releasing v0.65!",
-    page_icon="{0}",
-    layout="{1}",
-    initial_sidebar_state="collapsed"
+    page_title="{0}",
+    page_icon="{1}",
+    layout="{2}",
+    initial_sidebar_state="{3}"
 )
-'''.format(PAGE_CONFIG["icon"], PAGE_CONFIG["layout"], PAGE_CONFIG["sidebar"]),
+'''.format(PAGE_CONFIG["title"], PAGE_CONFIG["icon"], PAGE_CONFIG["layout"], PAGE_CONFIG["sidebar"]),
     },
 #     "Query Params [experimental]": {
 #         "text":"We have added to our experimental namespace the ability to get and set query parameters. With these query params, you can bookmark or share your app in various states. Thanks [@zhaoooyue](https://github.com/zhaoooyue) for the contribution!",
@@ -81,7 +82,7 @@ st.image(svg)
 def set_page_config():
     import streamlit as st
     st.beta_set_page_config(
-        page_title="Introducing Streamlit Page Config",
+        page_title=PAGE_CONFIG["title"],
         page_icon=PAGE_CONFIG["icon"],
         layout=PAGE_CONFIG["layout"],
         initial_sidebar_state=PAGE_CONFIG["sidebar"]
