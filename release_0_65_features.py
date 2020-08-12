@@ -12,7 +12,7 @@ FEATURES = {
 Now you can configure your page. Current options include:
 - Page title: Text displayed by your browser tab
 - Page icon: Icon displayed by your browser tab
-- Layout: Change page layout to wide or centered mode
+- Layout: Choose between wide or centered layout mode
 - Initial Sidebar State: Collapse or expand the sidebar by default
 """,
         "code":'''
