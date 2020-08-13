@@ -1,6 +1,6 @@
 PAGE_CONFIG = {
-    "title": "Streamlit for Teams beta",
-    "icon": "https://assets.website-files.com/5dc3b47ddc6c0c2a1af74ad0/5dea44bf49103c67a79b18d4_favicon32.png",
+    "title": "Streamlit Releasing v0.65!",
+    "icon": "🌟",
     "layout": "wide",
     "sidebar":"collapsed"
 }
@@ -9,11 +9,13 @@ FEATURES = {
     "Page Configurations [beta]": {
         "docs": 'url',
         "text":"""
-Now you can configure your page. Current options include:
+In Streamlit 0.65, you can now configure your page with the current options:
 - Page title: Text displayed by your browser tab
 - Page icon: Icon displayed by your browser tab
 - Layout: Choose between wide or centered layout mode
 - Initial Sidebar State: Collapse or expand the sidebar by default
+
+Note: This feature is currently in beta and subject to change.
 """,
         "code":'''
 st.beta_set_page_config(
@@ -24,23 +26,23 @@ st.beta_set_page_config(
 )
 '''.format(PAGE_CONFIG["title"], PAGE_CONFIG["icon"], PAGE_CONFIG["layout"], PAGE_CONFIG["sidebar"]),
     },
-#     "Query Params [experimental]": {
-#         "text":"We have added to our experimental namespace the ability to get and set query parameters. With these query params, you can bookmark or share your app in various states. Thanks [@zhaoooyue](https://github.com/zhaoooyue) for the contribution!",
-#         "code":'''
-# radio_list = ['Eat', 'Sleep', 'Both']
-# query_params = st.experimental_get_query_params()
-# # Query parameters are returned as a list to support multiselect.
-# # Get the first item in the list if the query parameter exists.
-# default = int(query_params["activity"][0]) if "activity" in query_params else 0
-# activity = st.radio(
-#     "What are you doing at home during quarantine?",
-#     radio_list,
-#     index = default
-# )
-# if activity:
-#     st.experimental_set_query_params(activity=radio_list.index(activity))
-#         ''',
-#     },
+    "Query Params [experimental]": {
+        "text":"We have added to our experimental namespace the ability to get and set query parameters. With these query params, you can bookmark or share your app in various states. Thanks [@zhaoooyue](https://github.com/zhaoooyue) for the contribution!",
+        "code":'''
+radio_list = ['Eat', 'Sleep', 'Both']
+query_params = st.experimental_get_query_params()
+# Query parameters are returned as a list to support multiselect.
+# Get the first item in the list if the query parameter exists.
+default = int(query_params["activity"][0]) if "activity" in query_params else 0
+activity = st.radio(
+    "What are you doing at home during quarantine?",
+    radio_list,
+    index = default
+)
+if activity:
+    st.experimental_set_query_params(activity=radio_list.index(activity))
+        ''',
+    },
     "Improved Dataframe Support": {
         "text":"""
 With 0.65, there is additional support for pandas dataframes. These components can now take in a panda dataframe as a list of options:
