@@ -10,5 +10,5 @@ enableCORS=false\n\
 port = $PORT\n\
 
 [logger]\n\
-level = debug\n\
+level = 'debug'\n\
 " > ~/.streamlit/config.toml
