@@ -1,2 +1,3 @@
 pandas >=0.21.0
-streamlit==0.65.0
+https://github.com/karriebear/streamlit-releases/raw/master/streamlit-0.65.0-py2.py3-none-any.whl; sys_platform=="linux"
+https://github.com/karriebear/streamlit-releases/raw/master/streamlit-0.65.0-py2.py3-none-any.whl; sys_platform=="darwin"
