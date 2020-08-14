@@ -9,6 +9,8 @@ st.beta_set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+st.hello.hello.run()
+
 with st.echo():
     options = pd.DataFrame({'Options': ['radio', 'multiselect', 'selectbox']})
 
