@@ -16,7 +16,7 @@ st.radio("Dataframe as input for radio buttons", options)
 
 """query params"""
 query_params = st.experimental_get_query_params()
-number = st.slider("slider", value=default_slider)
+number = st.slider("slider")
 st.write(number)
 
 st.hello.hello.run()
