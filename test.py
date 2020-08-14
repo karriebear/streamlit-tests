@@ -28,8 +28,8 @@ st.write(session_state.user_name)
 query_params = st.experimental_get_query_params()
 app_state = st.experimental_get_query_params()
 
-session_state = get_session_state(first_query_params=query_params)
 first_query_params = session_state.first_query_params
+session_state = get_session_state(first_query_params=query_params)
 
 radio_list = ['Eat', 'Sleep', 'Both']
 
