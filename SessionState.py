@@ -97,7 +97,9 @@ def get(**kwargs):
             (hasattr(s, '_main_dg') and s._main_dg == ctx.main_dg)
             or
             # Streamlit >= 0.54.0
-            (not hasattr(s, '_main_dg') and (s.enqueue == ctx.enqueue or s.enqueue == ctx._enqueue))
+            (not hasattr(s, '_main_dg') and s.enqueue == ctx.enqueue)
+            or
+            (not hasattr(s, '_main_dg') and s.enqueue == ctx._enqueue)
         ):
             this_session = s
 
@@ -111,4 +113,5 @@ def get(**kwargs):
     if not hasattr(this_session, '_custom_session_state'):
         this_session._custom_session_state = SessionState(**kwargs)
 
+    # breakpoint()
     return this_session._custom_session_state
