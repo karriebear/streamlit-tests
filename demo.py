@@ -2,13 +2,13 @@ from typing import Dict
 import streamlit as st
 import pandas as pd
 import numpy as np
-import cv2 as cv
+# import cv2 as cv
 
-@st.cache
-def get_image(uploaded_file):
-	file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-	img = cv.imdecode(file_bytes, cv.IMREAD_COLOR)
-	return img
+# @st.cache
+# def get_image(uploaded_file):
+# 	file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
+# 	img = cv.imdecode(file_bytes, cv.IMREAD_COLOR)
+# 	return img
 
 uploaded_file = st.file_uploader("Choose a base image", type=['png', 'jpg', 'gif'])
 # if uploaded_file is not None:

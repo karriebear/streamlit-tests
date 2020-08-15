@@ -1,5 +1,4 @@
 pandas>=0.21.0
 numpy==1.18.5
-opencv-python==4.2.0.34
 streamlit==0.65.2
 streamlit-0.65.2-py2.py3-none-any.whl
