@@ -2,4 +2,4 @@ pandas>=0.21.0
 numpy==1.18.5
 pdfplumber
 streamlit
-file_uploader_one_liner-0.65.2-py2.py3-none-any.whl
+file_uploader_one_liner-0.3-py2.py3-none-any.whl
