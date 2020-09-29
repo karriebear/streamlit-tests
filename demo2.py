@@ -1,4 +1,7 @@
 import streamlit as st
+from PIL import Image
+import numpy as np
+
 # clear the deprecation warning for the file uploader
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
