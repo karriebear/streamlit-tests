@@ -2,3 +2,4 @@ pandas>=0.21.0
 numpy==1.18.5
 pdfplumber
 streamlit-0.67.0-py2.py3-none-any.whl
+st-execbox==1.0.0
