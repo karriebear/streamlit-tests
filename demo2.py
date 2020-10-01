@@ -13,6 +13,7 @@ image_data = st.file_uploader('Upload an image', IMAGE_EXTENSIONS)
 if not image_data:
     raise RuntimeError('Please upload a file.')
 
+st.write(image_data.name)
 image = np.array(Image.open(image_data))
 st.image(image, use_column_width=True)
 
