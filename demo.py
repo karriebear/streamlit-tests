@@ -26,9 +26,10 @@ uploaded_file = st.file_uploader("Choose a base image", type=['png', 'jpg', 'gif
 
 sidebar = st.sidebar.file_uploader('Multiple Sidebar', accept_multiple_files=True)
 
-txt = st.file_uploader('Multiple Files', accept_multiple_files=True)
-# if txt is not None:
-#     st.write(txt)
+# txt = st.file_uploader('Multiple Files', accept_multiple_files=True)
+x = st.file_uploader("Pick a file", accept_multiple_files=True)
+st.write(x)
+st.write("length:", len(x))
 
 csv = st.file_uploader('CSV', type="csv")
 
