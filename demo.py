@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 # import cv2 as cv
 
+st.set_option('deprecation.showfileUploaderEncoding', False)
+
 # @st.cache
 # def get_image(uploaded_file):
 # 	file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)

@@ -11,7 +11,4 @@ port = $PORT\n\
 
 [logger]\n\
 level='debug'\n\
-
-[deprecation]\n\
-showfileUploaderEncoding=false\n\
 " > ~/.streamlit/config.toml
